@@ -1,0 +1,268 @@
+
+/* vana */
+
+* {
+   box-sizing: border-box;
+}
+body {margin: 0;}
+body {
+    font-family:'Playfair Display', serif;
+    line-height: 1.4em;
+    color: #333333;
+}
+h1 {
+    font-family:'Playfair Display', serif;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 0px;
+    color: #333;
+    font-size: 36px;
+}
+p {
+    font-family:'Playfair Display', serif;
+    padding: 0px;
+    color: #333;
+}
+.sisutekst {
+    font-family:'Playfair Display', serif;
+    padding: 0px 170px;
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+}
+.p2 {
+    padding: 20px;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.header {
+    width: 100%;
+    height: 60px;
+    margin-top: 60px;
+   
+}
+.header > .logo > img {
+    width: 100px;
+}
+.header > .logo {
+    width: 30%;
+    margin-left: 110px;
+    margin-bottom: -175px;
+    z-index: 2;
+    
+}
+.header > .main-nav > a {
+    margin: 30px;
+    color: #222222;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/* pildi kastid */
+.grid {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(220px, auto);
+    padding: 60px 170px 20px 170px;
+}
+.grid-item {
+    background-color: rgb(243, 240, 240);
+}
+.grid-item > img {
+    width: 100%;
+    /* margin: -5px; */
+}
+.grid-item_two {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+}
+.grid-item_four {
+    grid-row: 3 / 5;
+}
+.grid-item_eight {
+    grid-column: 3 / 4;
+    grid-row: 4 / 6;
+}
+.grid-item_nine {
+    grid-column: 1 / 3;
+    grid-row: 5 / 7;
+}
+.grid-item_twelve {
+    grid-column: 2 / 4;
+    grid-row: 7 / 9;
+}
+
+
+
+/* gallerii */
+
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'layfair Display', serif;
+  }
+  
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  /* gallery */
+  
+  .gallery {
+    overflow: hidden;
+  }
+  
+  .gallery__item {
+    position: relative;
+    height: 50vh;
+    min-height: 50vh;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+  
+  .gallery__item--first {
+    background-image: url("https://res.cloudinary.com/dv0gnzc0l/image/upload/v1575313109/Portfoolio/raamatu_kaas_ejuwn1.jpg");
+  }
+  
+  .gallery__item--2 {
+    background-image: url("https://res.cloudinary.com/dv0gnzc0l/image/upload/v1575313109/Portfoolio/raamatu_kaas_ejuwn1.jpg");
+  }
+  
+  .gallery__item--3 {
+    background-image: url("https://res.cloudinary.com/dv0gnzc0l/image/upload/v1575313109/Portfoolio/raamatu_kaas_ejuwn1.jpg");
+  }
+  
+  .gallery__item--4 {
+    background-image: url("https://res.cloudinary.com/dv0gnzc0l/image/upload/v1575313109/Portfoolio/raamatu_kaas_ejuwn1.jpg");
+  }
+  
+  .gallery__item--5 {
+    background-image: url("https://res.cloudinary.com/dv0gnzc0l/image/upload/v1575313109/Portfoolio/raamatu_kaas_ejuwn1.jpg");
+  }
+  
+  .gallery__item--6 {
+    background-image: url("https://res.cloudinary.com/dv0gnzc0l/image/upload/v1575313109/Portfoolio/raamatu_kaas_ejuwn1.jpg");
+  }
+  
+  .gallery__item--7 {
+    background-image: url("https://res.cloudinary.com/dv0gnzc0l/image/upload/v1575313109/Portfoolio/raamatu_kaas_ejuwn1.jpg");
+  }
+  
+  .gallery__item--8 {
+    background-image: url("https://res.cloudinary.com/dv0gnzc0l/image/upload/v1575313109/Portfoolio/raamatu_kaas_ejuwn1.jpg");
+  }
+  
+  .gallery__item--9 {
+    background-image: url("https://res.cloudinary.com/dv0gnzc0l/image/upload/v1575313109/Portfoolio/raamatu_kaas_ejuwn1.jpgg");
+  }
+  
+  .gallery__item:hover .gallery__info {
+    opacity: 1;
+  }
+  
+  .gallery__item:hover .gallery__info > div {
+    top: 0;
+  }
+  
+  .gallery__info {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0; /* add last */
+    transition: opacity 0.2s ease; /* add last */
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .gallery__info p {
+    color: silver;
+  }
+  
+  .gallery__info h2 {
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+  }
+  
+  .gallery__info > div {
+    position: relative;
+    top: 10px;
+    transition: top 0.2s ease;
+    padding: 2rem;
+    width: 100%;
+  }
+  
+  .gallery__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* media queries */
+  
+  @media (min-width: 60em) {
+    .gallery__item {
+      height: 50vh;
+      min-height: 50vh;
+    }
+    .gallery__item--2x {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+  
+  @media (min-width: 30em) {
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 60em) {
+    .gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+/* jalus */
+
+ 
+   
+.footer {
+    justify-content: center;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    display: flex;
+    padding:50px 20px;
+    text-decoration: none;
+    
+}
